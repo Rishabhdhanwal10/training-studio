@@ -1,0 +1,978 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.white{
+    color: #fff;
+}
+.orange{
+    color: darkorange;
+}
+.black{
+    color: black;
+}
+
+/***** Header Part *****/
+
+.header{
+    background-image: url('images/backgroound.jpg');
+    min-height: 100vh;
+    background-size: cover;
+    /*background-position: center;*/
+ }
+ .opac{
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.692);
+ }
+
+ .nav_bar{
+     width: 90%;
+     margin: 0px auto;
+     padding: 22px 0px;
+    /* background-color: rgba(0, 0, 0, 0.822);
+     background-color: rgba(0, 0, 0, 0.295);
+     box-shadow: 0px 2px 3px rgba(0,0,0,0.3) ;
+     /*position: fixed;*/
+     top: 0%;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .Training_studio>h1{
+    font-size: 28px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    padding-top: 1px;
+    margin: 0px;
+    color:darkorange;
+ }
+ .categories{
+     /*background-color: chartreuse;*/
+     padding-top: 10px;
+ }
+ .categories>ul>li{
+     display: inline-block;
+     list-style: none;
+     margin: 0px 14px;
+ }
+
+ .categories>ul>li>a{
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+
+.categories>ul>li>a:hover{
+    color: darkorange;
+}
+.btn{
+    padding: 9px 10px;
+    background-color: darkorange;
+}
+
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.text>h1{
+    font-size: 64px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    /*line-height: 0%;*/
+    margin: 0px;
+    padding-top: 45px;
+    padding-bottom: 60px;
+}
+
+.btn_2{
+    background-color: darkorange;
+    padding: 18px 22px;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.text>p{
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;  
+    line-height: 0%;
+}
+
+.nav_bar .fa{
+    display: none;
+}
+
+/********************* For Responsive Header *********************/
+
+@media(max-width:1100px){         
+   .Training_studio>h1{
+       font-size: 22px;
+   }
+   .categories>ul>li>a{
+       font-size: 11px;
+   }
+}
+@media(max-width:1375px){
+    .text>h1{
+        font-size: 48px;
+    }
+    .text>p{
+        font-size: 16px;
+    }
+}
+
+@media(max-width:900px){
+    .Training_studio>h1{
+        font-size: 22px;
+    }
+    .categories>ul>li>a{
+        font-size: 9px;
+    }
+    .categories>ul>li{
+        margin: 0px 10px;
+    }
+}
+
+@media(max-width:775px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .categories{
+        position: absolute;
+        background-color: black;
+        width: 200px;
+        height: 100vh;
+        top: 0%;
+        right: -300px;
+        text-align: center;
+        opacity: .8;
+        transition: 1s;
+    }
+    .categories>ul>li{
+        display: block;
+        padding: 20px 0px;
+        margin: 12px;
+    }  
+
+    .nav_bar .fa{
+        display: block;
+        color: white;
+        font-size: 22px;
+        cursor: pointer;
+        margin: 10px;
+    }
+
+    .Training_studio>h1{
+        padding-top: 8px;
+    }
+
+    .text>h1{
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
+}
+
+@media(max-width:400px){
+   .text>h1{
+    font-size: 38px;
+   }
+   .text>p{
+    font-size: 14px;
+   }
+}
+
+/************* Program Section 1 **************/
+
+.program{
+    text-align: center;
+    padding-top: 90px;
+    padding-bottom: 70px;
+    width: 35%;
+    margin: 0px auto;
+  }
+  .program>h1{
+      font-size: 28px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+      margin: 0px;
+      color:white;
+      padding: 14px 0px;
+  }
+  .program>p{
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 22px;
+      color: darkgray;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 8px;
+  }
+  .grid{
+      max-width: 75%;
+      margin: 0px auto;
+      display: grid;
+      grid-template-columns: repeat(2,auto);
+      grid-column-gap: 60px;
+      grid-row-gap: 65px;
+  }
+  .logo_dumble{
+      width: 110px;
+  }
+  .item{
+      /*background-color: darkgray;*/
+      width: auto;
+     /* border:3px solid black;*/
+      display: flex;
+              
+  }
+  .item>div>h1{
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+      padding-top: 3px;
+      padding-left: 22px;
+  }
+  .item>div>p{
+      font-size: 14px;
+      font-weight: lighter;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 22px;
+      line-height: 20px;
+      margin: 0px;
+      padding-top: 8px;
+      padding-bottom: 12px;
+      color: darkgray;
+  }
+  .item>div>h4{
+      color: darkorange;
+      font-weight: lighter;
+      font-size: 14px;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 22px;
+      margin: 0px;
+  }
+
+/************* Responsive Part ***************/
+
+@media(max-width:1050px){
+    .program{
+        width: 55%;
+    }
+}
+@media(max-width:768px){
+    .program{
+        width: 75%;
+    }
+    /*.program>h1{
+        font-size: 22px;
+    }
+    .program>p{
+        font-size: 12px;
+        line-height: 20px;
+    }*/
+}
+@media(max-width:450px){
+    .program{
+        padding-top: 70px;
+    }
+    .program>h1{
+        font-size: 18px;
+    }
+    .program>p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+
+@media(max-width:1350px) and (min-width:975px){
+    .grid{
+        max-width: 95%;
+        grid-column-gap: 25px;
+    }
+    /*.item>div>h1{
+        font-size: 18px;
+    }
+    .item>div>p{
+         font-size: 12px;
+    }
+    .item>div>h4{
+        font-size: 12px;
+    } */
+}
+@media(max-width:974px){
+    .grid{
+        max-width: 72%;
+        grid-template-columns: repeat(1,auto);
+        grid-column-gap: 25px;
+    }
+}
+@media(max-width:650px){
+    .grid{
+        max-width:95%;
+    }
+}
+@media(max-width:475px){
+    .item>div>h1{
+        font-size: 14px;
+    }
+    .item>div>p{
+         font-size: 10px;
+         line-height: 16px;
+    }
+    .item>div>h4{
+        font-size: 12px;
+    }
+    .logo_dumble{
+        width: 100px;
+    }
+}
+
+
+/******************** Section 2 ************************/
+
+.opac-2{
+     height: 100%;
+     width: 100%;
+     background-color: rgba(0, 0, 0, 0.692);
+ }
+  
+.bg_2{
+     background-image: url('images/cta-bg.jpg');
+     width: auto;
+     background-position: center;
+     background-size: cover;
+     height: 425px;
+     margin-top: 150px;
+     position: relative;
+}
+     
+/*.position{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}*/
+.center{
+      width: 60%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+}
+.center>h1{
+      font-size: 36px;
+      margin: 0px;
+      color:white;
+      padding-top: 1px;
+      font-weight: bolder;
+      font-family: Arial, Helvetica, sans-serif;
+}
+.center>p{
+      font-size: 16px;
+      color: white;
+      margin: 0px;
+      font-weight: 400;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 20px;
+      padding-bottom: 40px;
+      line-height: 24px;
+ }
+
+ /**************** Responsive Part *******************/
+
+ @media(max-width:1350px){
+     .center{
+      width: 75%;
+     }
+ }
+ @media(max-width:900px){
+     .center{
+         width: 85%;
+     }
+     .center>h1{
+         font-size: 26px;
+     }
+     .center>p{
+         font-size: 14px;
+     }
+ }
+ @media(max-width:450px){
+    .center{
+        width: 85%;
+    }
+    .center>h1{
+        font-size: 22px;
+    }
+    .center>p{
+        font-size: 12px;
+    }
+ }
+
+/******************** Section 4 **********************/
+
+.our_classes_main{
+    max-width: 80%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .text_part{
+    max-width: 40%;
+  }
+  .list_items{
+      list-style: none;
+      padding: 25px 45px;
+      box-shadow: 0px 2px 3px rgba(0,0,0,0.3) ;
+      margin-bottom: 35px;
+      /*text-align: center;*/
+  }
+  .text_part>ul{
+      padding-left: 0px;
+  }
+  .links{
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+      padding-left: 10px;
+  }         
+  .img_part{
+      max-width: 55%;
+  }
+  .img_part>h1{
+      font-size: 22px;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0px;
+      padding-top: 20px;
+  }
+  .img_part>p{
+      font-size: 14px;
+      font-weight: lighter;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 28px;
+      padding-bottom: 40px;
+      margin: 0px;
+      line-height: 24px;
+      color: darkgray;
+  }
+  .img_part>div{
+      width: 100%;
+      height: 275px;
+      /*margin-top: 20px;*/
+      background-image: url('images/training-image-01.jpg');
+      background-position: center;
+      background-size: cover;
+      border-radius: 8px;
+  }
+  .text_part>ul>div{
+      display: inline-block;
+  }
+  .btn_3{
+     box-shadow: none;
+     color: white;
+     padding: 21px 91px;
+     /*padding: 1.3rem 5.7rem;*/
+     text-decoration: none;
+     list-style: none;
+     font-weight: bold;
+     font-size: 16px;
+     border-radius: 6px;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: darkorange;
+}
+.btn_list_item{
+     list-style: none;
+     margin-top: 55px;
+}
+
+/************* Respnsive Part **************/
+
+@media(max-width:1350px){
+    .our_classes_main{
+        max-width: 90%;
+    }
+}
+@media(max-width:1050px){
+    .our_classes_main{
+        max-width: 100%;
+    }
+}
+@media(max-width:950px){
+     .our_classes_main{
+         display: block;
+     }
+     .text_part{
+         max-width: 75%;
+         margin: 0px auto;
+         /*margin-bottom: 3.8rem;*/
+         margin-bottom: 61px;
+      }   
+    .links{
+         font-size: 20px;
+    }      
+    .logo{
+         width: 40px;
+    }   
+    .img_part{
+         max-width: 75%;
+         margin: 0px auto;
+    }
+    .img_part>div{
+         width: 100%;
+    }
+}
+@media(max-width:550px){
+    .text_part{
+         max-width: 90%;
+      }
+      .list_items{
+         padding: 25px 20px;
+    }
+    .links{
+         font-size: 16px;
+    }    
+    .img_part{
+        max-width: 90%;
+        margin: 0px auto;
+    }
+    .img_part>h1{
+        font-size: 24px;
+        padding-top: 28px;
+    }
+    .img_part>p{
+        font-size: 14px;
+        padding-top: 22px;
+        padding-bottom: 44px;
+        line-height: 28px;
+    }
+    .img_part>div{ 
+        height: 200px;
+    }     
+    .btn_3{
+        padding: 18px 45px;
+    }
+}
+
+
+/************************ Section Table ***********************/
+
+.main_2{
+    background-image: url('images/schedule-bg.jpg');
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    /*height: 1020px;*/
+    margin-top: 150px;
+}
+.opac-2>ul>li{
+    list-style: none;
+    display: inline-block;
+}
+.opac-2>ul{
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    padding: 0px 7px;
+}
+.opac-2>ul>li>a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.opac-2>ul>li>a:hover{
+    color: darkorange;
+}
+.grid_2{
+   max-width: 65%;
+   margin: 0px auto;
+   display: grid;
+   grid-template-columns: repeat(4 , auto);
+   padding-bottom: 135px;
+}
+.grid_2>article{
+    height: 100px; 
+   /* background-color: darkgray;*/
+    border: 0.02rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid_2>article>p{
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+}
+
+/******************* Responsive Part *******************/
+
+@media(max-width:1350px){
+    .grid_2{
+        max-width: 75%;
+    }
+}
+@media(max-width:768px){
+    .grid_2{
+        max-width: 90%;
+    }
+    .grid_2>article>p{
+        font-size: 12px;
+    }
+    .opac-2>ul>li>a{
+        font-size: 14px;
+    }
+}
+@media(max-width:550px){
+    .grid_2{
+        max-width: 95%;
+    }
+    .grid_2>article{
+        height: 75px;
+    }
+    .grid_2>article>p{
+        font-size: 8px;
+    }
+    .opac-2>ul>li>a{
+        font-size: 10px;
+    }
+}
+
+
+/*********************** Card Section ***********************/
+
+.main_trainers{
+    width: 100%;            
+}
+.trainers_content{
+    width: 75%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.trainers_content>article{
+    width: 31.5%;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.3) ;
+}
+.trainers_content_article_1>div{
+    width: 80%;
+    margin: 0px auto;
+    height: 200px;
+    background-image: url('images/first-trainer.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 36px;
+    border-radius: 8px;
+}
+.trainer_content_text{
+    width: 80%;
+    margin: 0px auto;
+}
+.trainer_content_text>h4{
+    font-size: 14px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    color: orangered;  
+    margin: 0px;
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+.trainer_content_text>h1{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding-bottom: 8px;
+}
+.trainer_content_text>p{
+    font-size: 14px; 
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 24px; 
+    color: darkgray;  
+    padding-bottom: 50px;
+}
+.trainers_content_article_2>div{
+   width: 80%;
+    margin: 0px auto;
+    height: 200px;
+    background-image: url('images/second-trainer.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 36px;
+    border-radius: 8px;
+}
+.trainers_content_article_3>div{
+   width: 80%;
+    margin: 0px auto;
+    height: 200px;
+    background-image: url('images/third-trainer.jpg');
+    background-position: center;
+    background-size: cover;
+    margin-top: 36px;
+    border-radius: 8px;
+}
+
+/********************* Responsive Part ***********************/
+
+@media(max-width:1175px){
+    .trainers_content{
+        width: 95%;
+    }
+}
+@media(max-width:900px){
+    .trainers_content{
+        display: block;
+    }
+    .trainers_content>article{
+        width: 80%;
+        height: 600px;
+        margin: 0px auto;
+        box-shadow: 0px 2px 3px rgba(0,0,0,0.3) ;
+        margin-bottom: 75px;
+    }
+    .trainers_content_article_1>div{
+        width: 80%;
+        height: 75%;
+    }
+    .trainers_content_article_2>div{
+        width: 80%;
+        height: 75%;
+    }
+    .trainers_content_article_3>div{
+        width: 80%;
+        height: 75%;
+    }
+}
+@media(max-width:750px){
+    .trainers_content>article{
+        width: 90%;
+    }
+}
+@media(max-width:625px){
+    .trainers_content_article_1>div{
+        height: 65%;
+    }
+    .trainers_content_article_2>div{
+        height: 60%;
+    }
+    .trainers_content_article_3>div{
+        height: 60%;
+    }
+}
+@media(max-width:450px){
+    .trainers_content>article{
+        height: 450px;
+    }
+    .trainers_content_article_1>div{
+        width: 80%;
+        height: 45%;
+    }
+    .trainers_content_article_2>div{
+        width: 80%;
+        height: 45%;
+    }
+    .trainers_content_article_3>div{
+        width: 80%;
+        height: 45%;
+    }
+}
+
+
+/************************* Map And Contact Form Section****************************/
+
+.end_section{
+    width: 100%;
+    display: flex;
+    height: 530px;
+    margin-top: 120px;
+}
+.map{
+    width: 50%;
+    height: 100%;
+    margin: 0px;
+    background-color: gray;
+}
+.form{
+    width: 50%;
+    height: 100%;
+    /*background-color: chartreuse;*/
+    position: relative;
+    background-image: url('images/contact-bg.jpg');
+}
+.container{
+   width: 80%;
+   height: 80%;
+   border-radius: 14px;
+   background-color: white;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+}
+.main_form{
+    width: 80%;
+    /*height: 80%;*/
+    /*background-color: brown;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.form_group{
+    width: 100%;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+.form_group input,
+.form_group textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    font-family: Arial, Helvetica, sans-serif;
+}
+textarea{
+    resize: none;
+}
+.form_btn{
+    text-decoration: none;
+    color: white;
+    padding: 12px 20px;
+    background-color: darkorange;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+}
+/*#status{
+    width: 100%;
+    padding: 12px 10px;
+    background-color: burlywood;
+    text-align: center;
+    margin: 0px auto;
+    position: absolute;
+    bottom: 0%;
+    font-size: 16px;
+}
+#status.success{
+    background-color: rgb(211, 250 ,153);
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: rgb(250, 129, 92);
+    color: white;
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}*/
+
+/************************* Responsive Part ************************/
+
+@media(max-width:950px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media(max-width:750px){
+    .end_section{
+        display: block;
+        width: auto;
+        height: auto;
+    }
+    .map{
+        height: 550px;
+        width: 100%;
+    }
+    .form{
+        height: 550px;
+        width: 100%;
+    }
+    .size{
+        height: 550px;
+    }
+}
+
+@media(max-width:400px){
+    .map{
+        height: 475px;
+        width: 100%;
+    }
+    .form{
+        height: 475px;
+        width: 100%;
+    }
+    .size{
+        height: 475px;
+    }
+    .container{
+        height: 85%;
+    }
+}
+
+
+/****************************** Footer ***************************/
+
+.footer{
+    width: 100%;
+}
+.footer>div{
+   width: 60%;
+   margin: 0px auto;
+   text-align: center;
+   padding: 36px 0px;
+   color: darkgray;
+   font-size: 14px;
+   font-weight: lighter;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+/************************* Responsive Part ****************************/
+
+@media(max-width:650px){
+    .footer>div{
+        width: 80%;
+    }
+}
+@media(max-width:400px){
+    .footer>div{
+        width: 90%;
+        line-height: 24px;
+        font-size: 12px;
+    }
+}
